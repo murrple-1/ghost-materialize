@@ -1,5 +1,16 @@
-<ul id="nav-mobile" class="right hide-on-med-and-down">
-	{{#foreach navigation}}
-	<li><a href="{{url absolute="true"}}">{{label}}</a></li>
-	{{/foreach}}
-</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="{{@blog.url}}" class="brand-logo">{{@blog.title}}</a>
+    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      {{#foreach navigation}}
+      <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+      {{/foreach}}
+    </ul>
+    <ul class="side-nav" id="mobile-nav">
+      {{#foreach navigation}}
+      <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+      {{/foreach}}
+    </ul>
+  </div>
+</nav>
