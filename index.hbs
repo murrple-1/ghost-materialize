@@ -1,9 +1,8 @@
 {{!< default }}
-<nav class="navbar fixed shaded">
-  <div class="navbar--row container">
-    <a class="navbar--title" href="{{@blog.url}}">{{@blog.title}}</a>
-    <div class="navbar--spacer"></div>
-    {{> "navigation_static"}}
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">{{@blog.title}}</a>
+    {{navigation}}
   </div>
 </nav>
 <header class="header shaded bg-darken">
